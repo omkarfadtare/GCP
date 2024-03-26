@@ -14,4 +14,36 @@ A Project ID is a unique identifier that is used to link Google Cloud resources 
 Google Cloud APIs are a key part of Google Cloud. Like services, the 200+ APIs, in areas that range from business administration to machine learning, all easily integrate with Google Cloud projects and applications.
 APIs are application programming interfaces that you can call directly or via the client libraries. Cloud APIs use resource-oriented design principles
 
+## Create and Manage Cloud Resources,
+where you learn how to do the following: write gcloud commands and use Cloud Shell, create and deploy virtual machines in Compute Engine, run containerized applications on Google Kubernetes Engine, and configure network and HTTP load balancers.
+Compute Engine allows you to create virtual machines (VMs) that run different operating systems, including multiple flavors of Linux (Debian, Ubuntu, Suse, Red Hat, CoreOS) and Windows Server, on Google infrastructure. You can run thousands of virtual CPUs on a system that is designed to be fast and to offer strong consistency of performance.
+create VM instances of various machine types using the Google Cloud console and the gcloud command line in Cloud Shell. You also learn how to connect an NGINX web server to your VM
+
+
+
+
+
+Open Google Cloud console
+Cloud Shell is a virtual machine that is loaded with development tools. It offers a persistent 5GB home directory and runs on the Google Cloud. Cloud Shell provides command-line access to your Google Cloud resources.
+Click Activate Cloud Shell Activate Cloud Shell icon at the top of the Google Cloud console.
+You can list the active account name with this command
+gcloud auth list
+Click Authorize.
+Output:
+
+ACTIVE: *
+ACCOUNT: "ACCOUNT"
+
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+You can list the project ID with this command:
+gcloud config list project
+Output:
+
+[core]
+project = "PROJECT_ID"
+
+
+
+
 
